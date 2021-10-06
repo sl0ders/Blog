@@ -23,7 +23,7 @@ class Comment
     private $content;
 
     /**
-     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="comments")
      * @ORM\JoinColumn(nullable=false)
      */
     private $author;
@@ -34,7 +34,7 @@ class Comment
     private $created_at;
 
     /**
-     * @ORM\ManyToOne(targetEntity=post::class, inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity=Post::class, inversedBy="comments")
      * @ORM\JoinColumn(nullable=false)
      */
     private $article;
